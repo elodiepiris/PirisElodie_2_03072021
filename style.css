@@ -1,0 +1,133 @@
+/* GENERAL */
+.flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.decorationNone {
+    text-decoration: none;
+}
+.bordernNone {
+    border: none;
+}
+
+/* POLICE */
+@font-face {
+    font-family: 'raleway';
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+html,body 
+{
+    font-family: 'Raleway', Arial, serif;
+}
+
+h1 {
+font-weight: bold;
+}
+
+/* COLORS */
+.colorblue {
+    color:#0065FC 
+}
+.colorbackblue {
+    background-color:#0065FC 
+}
+.colorlightblue {
+    background-color:#DEEBFF
+}
+.colorgrey {
+    background-color:#F2F2F2 
+}
+.colorblack {
+    color:black 
+}
+  
+/* NAV */
+.sizenav {
+    width: 50%;
+}
+.sizeliennav {
+    width: 140px;
+    height: 98px;
+}
+.bordurenav {
+    border-top: 2px solid #0065FC  ;
+}
+
+/* SEARCH */
+.borduresearch {
+    width:390px;
+    border-radius: 10px;
+    border: 0.5px solid #F2F2F2 ;
+}
+.iconsearch {
+    height:40px;
+    width:40px;
+    border-radius: 10px 0 0 10px; 
+}
+.search {
+    height: 40px;
+    width: 230px;
+    font-size: 14px;
+    padding-left: 10px;
+    color:black;
+    font-weight:bold;
+}
+.buttonsearch {
+    height:40px;
+    width:120px;
+    font-size:14px;
+    color:white;
+    cursor:pointer;
+    border-radius: 0 10px 10px 0; 
+}
+
+/* FILTRES */
+
+.filtre {
+display: flex;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.marginfiltre {
+margin-right: 20px;
+}
+.filtretexticon {
+    border: 3px solid #F2F2F2;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.filtretexticon:hover > .filtretext {
+    color: #0065FC;
+}
+.filtretexticon:hover > .filtreicon {
+    color: white;
+    background-color: #0065FC;
+}
+.filtretext {
+    height:40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.filtreicon {
+    border-radius: 25px;
+    margin-left: -2px;
+    width:42px;
+    height:42px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
