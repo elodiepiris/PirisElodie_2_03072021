@@ -24,6 +24,12 @@ margin-bottom: 20px;
 }
 
 /* NAV */
+.sizenav {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 #logo_reservia{
     display: flex;
     align-items: center;
@@ -32,15 +38,13 @@ margin-bottom: 20px;
 .lien_nav{
     text-decoration: none;
     color: inherit;
-    height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .bouton_nav{
-    width: 150px;
-    height: 70px;
+    width: 120px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,69 +98,138 @@ margin-bottom: 20px;
     width:120px;
     font-size:14px;
     color:white;
-    cursor:pointer;
     border-radius: 0 10px 10px 0; 
     background-color:#0065FC;
     font-weight: bold; 
-}
-
-/* FILTRES */
-
-#titre_filtres {
-    margin-right: 15px;
-    font-size: 14px;
-}
-#box_filtres{
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-.icons_filtres{
-    border: 2px solid #F2F2F2;
-    max-width: 230px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    margin: 5px 15px 5px 5px;
-}
-.filtreicon {
-    display: flex;
-    text-align: center;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border-radius: 100px;
-    padding: 10px;
-    width: 20px;
-}
-.nom_filtre{
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0 15px 0 15px;
-}
-.filtreicon:hover {
-    background-color: white;
     cursor: pointer;
 }
-.icons_filtres:hover {
+.buttonsearch:hover{
     background-color: #DEEBFF;
     color:#0065FC;
     cursor: pointer;
 }
-/*INFO*/
-.infoicon{
+
+/* FILTRES */
+#box_filtres{
     display: flex;
     align-items: center;
-    border: 2px solid #f2f2f2;
-    padding: 6px;
-    border-radius: 50px;
-    width: 14px;
-    text-align: center;
-    margin-right: 10px;
-    color: #0065FC;
 }
+#titre_filtres{
+    margin: 20px 10px 10px 10px;
+    font-size: 14px;
+}
+#filtres{
+    display: flex;
+    font-weight: bold;
+    padding: 0;
+    margin: 15px 0;
+}
+.logos{
+    border: 3px solid #F2F2F2;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+}
+.logos:hover{
+    cursor: pointer;
+    background-color: #DEEBFF;
+    color:#0065FC;
+}
+.logofiltre{
+    color: #0065FC;
+    background: #deebff;
+    min-width: 17px;
+    border-radius: 50px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+li:hover .logofiltre{
+    cursor: pointer;
+    background-color: white;
+}
+.nom_filtre{
+    padding-left: 10px;
+    font-size: 14px;
+    margin: 0 15px 0 0;
+}
+/*INFO*/
 .info{
     display: flex;
     align-items: center;
-    margin-top: 10px;
+}  
+.infoicon{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #f2f2f2;
+    font-size: 12px;
+    color: #0065FC;
+    margin-right: 10px;
+    border-radius: 100%;
+    padding-top:2px;
+    display: flex;
+    text-align: center;
+} 
+.infotext{ 
+    padding-top: 7px;
+}
+/*HEBERGEMENTS*/
+.blocs {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.blocmarseille {
+flex: 2;
+height: 650px;
+margin-right: 20px;
+border-radius: 10px;
+background-color: #F2F2F2;
+padding-left: 20px;
+padding-right: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center
+}
+.blocpopulaires {
+flex: 1;
+height: 650px;
+margin-left: 20px;
+border-radius: 10px;
+background-color: #F2F2F2;
+}
+.hotelimage {
+width: 100%;
+height: 120px;
+background-size: cover;
+background-position: center;
+border-radius: 15px 15px 0 0;
+}
+.bloc1 {
+display: flex;
+justify-content: space-between; 
+justify-items: center;  
+margin-bottom: 10px;
+}
+.bloc2 {
+display: flex;
+justify-content: space-between; 
+justify-items: center;  
+margin-top: 10px;
+}
+.cubehebergement {
+width:30%;
+height:auto;
+background-color: white;
+padding: 0.5%;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;
+}
+.texthebergement {
+width: 90%;   
 }
