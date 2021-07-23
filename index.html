@@ -7,19 +7,16 @@
         <title>Reservia</title>
     </head>
     <body>
+        <div class="bloc_page">
         <nav><!--Menu de navigation-->
-            <div class="flexBetween">
+            <div id="logo_reservia">
                 <div><img src="images/logo/Reservia.svg" alt="Logo Reservia" /> </div> 
-                <div class=" sizenav flexAround">
-                    <div class= "sizeliennav flexCentre bordurenav">
-                        <a class="colorblue decorationNone" href="#Hebergements">Hébergements</a>
-                    </div>
-                    <div class= "sizeliennav flexCentre">
-                        <a class="colorblack decorationNone" href="#Activites">Activités</a>
-                    </div>
-                    <div class= "sizeliennav flexCentre">
-                        <a class="colorblue decorationNone boldtext" href="#inscription">S'inscrire</a>
-                    </div>
+                <div class="bouton_nav" id="hebergements">
+                    <a class="lien_nav" href="#Hebergements">Hébergements</a></div>
+                <div class="bouton_nav" id="activite"> 
+                    <a class="lien_nav" href="#titre_activite">Activités</a></div>
+                <div class="bouton_nav" id="inscription">
+                    <a class="lien_nav" href="#">S'inscrire</a>
                 </div>
             </div>
         </nav>
@@ -27,32 +24,34 @@
             <section><!--Section de recherche hébergement-->
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
-                <div class="borduresearch flexCentre">
-                    <div class="colorgrey flexCentre iconsearch"><i class="fas fa-map-marker-alt colorblack"></i></div>
-                    <div><input class="search flexCentre bordernNone" type="search" value="Marseille, France"/></div>
-                    <div class="colorbackblue flexCentre buttonsearch">Rechercher</div>
+                <div class="borduresearch">
+                    <div class="iconsearch"><i class="fas fa-map-marker-alt"></i></div>
+                    <div><input class="search" type="search" placeholder="Marseille, France"/></div>
+                    <div class="buttonsearch">Rechercher</div>
                 </div>
-                <div class= "filtre marginfiltre">
-                    <div class="marginfiltre"><h3>Filtres</h3></div> 
-                        <div class="flexBetween filtretexticon">
-                            <i class="fas fa-money-bill-wave fa-lg filtreicon flexCentre"></i>
-                            <div class="filtretext flexCentre">Économique</div>
+                <div id= "box_filtres">
+                    <div><h4 id="titre_filtres">Filtres</h4></div> 
+                        <div class="icons_filtres">
+                            <i class="fas fa-money-bill-wave filtreicon"></i>
+                            <div class="nom_filtre">Économique</div>
                         </div>
-                        <div class="flexBetween filtretexticon">
-                            <div i class="fas fa-child fa-lg filtreicon flexCentre"></div>
-                            <div class="filtretext flexCentre">Familial</div>
+                        <div class="icons_filtres">
+                            <i class="fas fa-child filtreicon"></i>
+                            <div class="nom_filtre">Familial</div>
                         </div>
-                        <div class="flexBetween filtretexticon">
-                            <i class="fas fa-heart fa-lg filtreicon flexCentre"></i>
-                            <div class="filtretext flexCentre">Romantique</div>
+                        <div class="icons_filtres">
+                            <i class="fas fa-heart filtreicon"></i>
+                            <div class="nom_filtre">Romantique</div>
                         </div>
-                        <div class="flexBetween filtretexticon">
-                            <i class="fas fa-dog fa-lg filtreicon flexCentre"></i>
-                            <div class="filtretext flexCentre">Animaux autorisés</div>
+                        <div class="icons_filtres">
+                            <i class="fas fa-dog filtreicon"></i>
+                            <div class="nom_filtre">Animaux autorisés</div>
                         </div>
                 </div>
         </section>
     </header> 
+                <div class="info">
+                    <i class="fas fa-info infoicon"></i> <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div> 
         <section id="Hebergements"><!--Section des hébergements-->
-                <br>Plus de 500 logements sont disponibles dans cette ville</br>
-                <h2>Hébergements à Marseille</h2>
+                <h1>Hébergements à Marseille</h1>

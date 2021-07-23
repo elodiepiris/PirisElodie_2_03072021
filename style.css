@@ -1,133 +1,162 @@
+/* POLICE */
+@font-face {
+font-family: "raleway";
+src: url(fonts/Raleway-VariableFont_wght.ttf)'' format('truetype'); 
+}
+    
 /* GENERAL */
-.flexCentre {
+
+html,body 
+{
+font-family: 'Raleway', Arial, serif;
+}
+h1 {
+font-weight: bold;
+font-size: 18px;
+margin-bottom: -5px;
+}
+p {
+font-size: 13px;
+margin-bottom: 20px;
+}
+.bloc_page {
+    margin: 0 auto;
+}
+
+/* NAV */
+#logo_reservia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lien_nav{
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bouton_nav{
+    width: 150px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.flexAround {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.flexBetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.decorationNone {
-    text-decoration: none;
-}
-.bordernNone {
-    border: none;
+#inscription{
+    color : #0065FC;
+    font-weight: bold;
+} 
+.bouton_nav:hover{ 
+    color : #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
-/* POLICE */
-@font-face {
-    font-family: 'raleway';
-    src: url('fonts/Raleway-Regular.ttf') format('truetype');
-}
-
-html,body 
-{
-    font-family: 'Raleway', Arial, serif;
-}
-
-h1 {
-font-weight: bold;
-}
-
-/* COLORS */
-.colorblue {
-    color:#0065FC 
-}
-.colorbackblue {
-    background-color:#0065FC 
-}
-.colorlightblue {
-    background-color:#DEEBFF
-}
-.colorgrey {
-    background-color:#F2F2F2 
-}
-.colorblack {
-    color:black 
-}
-  
-/* NAV */
-.sizenav {
-    width: 50%;
-}
-.sizeliennav {
-    width: 140px;
-    height: 98px;
-}
-.bordurenav {
-    border-top: 2px solid #0065FC  ;
-}
 
 /* SEARCH */
 .borduresearch {
-    width:390px;
+    width:350px;
     border-radius: 10px;
     border: 0.5px solid #F2F2F2 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .iconsearch {
     height:40px;
     width:40px;
     border-radius: 10px 0 0 10px; 
+    background-color:#F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .search {
     height: 40px;
-    width: 230px;
+    width: 190px;
     font-size: 14px;
     padding-left: 10px;
     color:black;
     font-weight:bold;
+    border: none;
+}
+.search::placeholder{
+    color: black;
+    font-family: "raleway";
 }
 .buttonsearch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height:40px;
     width:120px;
     font-size:14px;
     color:white;
     cursor:pointer;
     border-radius: 0 10px 10px 0; 
+    background-color:#0065FC;
+    font-weight: bold; 
 }
 
 /* FILTRES */
 
-.filtre {
-display: flex;
-align-items: center;
-margin-top: 20px;
-margin-bottom: 20px;
+#titre_filtres {
+    margin-right: 15px;
+    font-size: 14px;
 }
-.marginfiltre {
-margin-right: 20px;
+#box_filtres{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
-.filtretexticon {
-    border: 3px solid #F2F2F2;
-    height: 40px;
-    border-radius: 30px;
-    margin-right: 20px;
-}
-.filtretexticon:hover > .filtretext {
-    color: #0065FC;
-}
-.filtretexticon:hover > .filtreicon {
-    color: white;
-    background-color: #0065FC;
-}
-.filtretext {
-    height:40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 0 25px 25px 0;
+.icons_filtres{
+    border: 2px solid #F2F2F2;
+    max-width: 230px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin: 5px 15px 5px 5px;
 }
 .filtreicon {
-    border-radius: 25px;
-    margin-left: -2px;
-    width:42px;
-    height:42px;
+    display: flex;
+    text-align: center;
     color: #0065FC;
     background-color: #DEEBFF;
+    border-radius: 100px;
+    padding: 10px;
+    width: 20px;
+}
+.nom_filtre{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 15px 0 15px;
+}
+.filtreicon:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.icons_filtres:hover {
+    background-color: #DEEBFF;
+    color:#0065FC;
+    cursor: pointer;
+}
+/*INFO*/
+.infoicon{
+    display: flex;
+    align-items: center;
+    border: 2px solid #f2f2f2;
+    padding: 6px;
+    border-radius: 50px;
+    width: 14px;
+    text-align: center;
+    margin-right: 10px;
+    color: #0065FC;
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 }
