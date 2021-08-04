@@ -3,43 +3,39 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/2f79477bfb.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 
 <body>
-    <div class=container>
+    <header>
+        <!-- logo reservia and navbar -->
+        <div id="logo">
+          <a href="#"><img src="images/logo/Reservia.svg" alt="Reservia"/></a>
+        </div>
         <nav>
-            <!--Menu de navigation-->
-            <div id="logo_reservia">
-                <div><img src="images/logo/Reservia.svg" alt="Logo Reservia" /> </div>
-                <div class="sizenav">
-                    <div class="bouton_nav" id="hebergements">
-                        <a class="lien_nav" href="#Hebergements">Hébergements</a>
-                    </div>
-                    <div class="bouton_nav" id="activites">
-                        <a class="lien_nav" href="#activite">Activités</a>
-                    </div>
-                    <div class="bouton_nav" id="inscription">
-                        <a class="lien_nav" href="#">S'inscrire</a>
-                    </div>
-                </div>
-            </div>
+          <ul>
+            <li><a href="#marseille">Hébergements</a></li>
+            <li><a href="#activite">Activités</a></li>
+          </ul>
+          <a href="#" id="signIn">S'inscrire</a>
         </nav>
-        <header>
-            <section>
-                <!--Section de recherche-->
+      </header>
+        <main>
+            <section> <!--Section de recherche-->
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <div class="borduresearch">
                     <div class="iconsearch"><i class="fas fa-map-marker-alt"></i></div>
                     <div><input class="search" type="search" placeholder="Marseille, France" /></div>
-                    <div class="buttonsearch">Rechercher</div>
+                    <div class="buttonsearch">
+                        <span class="mobilenone">Rechercher</span>
+                        <span class="desktopnone"><i class="fas fa-search"></i></span>
+                    </div>
                 </div>
-                <div id=box_filtres>
+                <div class="box_filtres">
                     <h3 id="titre_filtres">Filtres</h3>
                     <ul id="filtres">
                         <li class="logos">
@@ -60,13 +56,12 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="info">
                     <div><i class="fas fa-info infoicon"></i> </div>
                     <p class="infotext">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
-        </header>
+        </main>
         <section id="Hebergements" class="blocs">
             <!--Section des hébergements-->
             <div class="blocmarseille">
@@ -161,63 +156,65 @@
                         </div>
                     </div>
                 </div>
-                <h4>Afficher plus</h4>
+                <a class="afficherplus" href="#">Afficher plus</a>
             </div>
-            <div class="blocpopulaires">
+            <div class="populaires">
                 <!--Les plus populaires-->
                 <div class=icontext>
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line fa-lg iconpop"></i>
                 </div>
-                <div class="bloc3">
-                    <div class="cubepopulaires">
-                        <div class="popimage1"></div>
-                        <div class="textpopulaires">
-                            <div class="cubesize">
-                                <h3>Hôtel Le soleil du matin</h3>
-                                <p>Nuit à partir de 128€</p>
-                                <div class="etoiles">
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
+                <div class="blocpopulaires">
+                    <div class="bloc3">
+                        <div class="cubepopulaires">
+                            <div class="popimage1"></div>
+                            <div class="textpopulaires">
+                                <div class="cubesize">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de 128€</p>
+                                    <div class="etoiles">
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="bloc4">
-                    <div class="cubepopulaires">
-                        <div class="popimage2"></div>
-                        <div class="textpopulaires">
-                            <div class="cubesize">
-                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                                <p>Nuit à partir de 71€</p>
-                                <div class="etoiles">
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star stargrey"></i>
+                    <div class="bloc4">
+                        <div class="cubepopulaires">
+                            <div class="popimage2"></div>
+                            <div class="textpopulaires">
+                                <div class="cubesize">
+                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                    <p>Nuit à partir de 71€</p>
+                                    <div class="etoiles">
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star stargrey"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="bloc5">
-                    <div class="cubepopulaires">
-                        <div class="popimage3"></div>
-                        <div class="textpopulaires">
-                            <div class="cubesize">
-                                <h3>Hôtel Tout bleu et Blanc</h3>
-                                <p>Nuit à partir de 68€</p>
-                                <div class="etoiles">
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star starblue"></i>
-                                    <i class="fas fa-star stargrey"></i>
+                    <div class="bloc5">
+                        <div class="cubepopulaires">
+                            <div class="popimage3"></div>
+                            <div class="textpopulaires">
+                                <div class="cubesize">
+                                    <h3>Hôtel Tout bleu et Blanc</h3>
+                                    <p>Nuit à partir de 68€</p>
+                                    <div class="etoiles">
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star starblue"></i>
+                                        <i class="fas fa-star stargrey"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -228,10 +225,10 @@
         <section id="activite" class="activites">
             <h2>Activités à Marseille</h2>
             <div class="blocactivites">
-            <div class="cubeactivites">
-                <div class="imgactivites1"></div>
-                <div class="titreactivites">
-                    <h3>Vieux Port</h3>
+                <div class="cubeactivites">
+                    <div class="imgactivites1"></div>
+                    <div class="titreactivites">
+                        <h3>Vieux Port</h3>
                 </div>
             </div>
             <div class="smallblocactivites">
@@ -268,9 +265,9 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
-    </div>
-    <footer><!--FOOTER-->
+    <footer> <!--FOOTER-->
         <div class="footer">
             <div class="blocfooter">
                 <h3>A propos</h3>
@@ -281,17 +278,16 @@
                 </div>
             </div>
             <div class="blocfooter">
-                <h3>Nos hébergements</h3>
+            <h3>Nos hébergements</h3>
                 <div><a href="#" class="decorationNone">Charte qualité</a></div>
                 <div><a href="#" class="decorationNone">Soumettre votre hôtel</a></div>
             </div>
             <div class="blocfooter">
-                <h3>Assistance</h3>
+            <h3>Assistance</h3>
                 <div><a href="#" class="decorationNone">Centre d'aide</a></div>
                 <div><a href="#" class="decorationNone">Nous contacter</a></div>
             </div>
         </div>
-    </div>
     </footer>
 </body>
 </html>

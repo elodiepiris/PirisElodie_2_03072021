@@ -1,17 +1,18 @@
 /* POLICE */
 @font-face {
   font-family: "raleway";
-  src: url(fonts/Raleway-VariableFont_wght.ttf) "" format("truetype");
+  src: url("fonts/Raleway-VariableFont_wght.ttf")  format("truetype");
 }
-
 /* GENERAL */
 body {
-  font-family: "Raleway", Arial, serif;
-  margin: 0;
+  font-family: "Raleway", Arial, sans-serif;
+  margin:0;
 }
-.container {
-  margin: 0 40px 0 40px;
-  min-width: 1400px;
+header, section {
+  font-family: "Raleway", Arial, sans-serif;
+  width: auto;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 h1 {
   font-weight: bold;
@@ -21,6 +22,12 @@ h1 {
 h3 {
   font-weight: bold;
   font-size: 16px;
+}
+ul{
+  list-style: none;
+}
+li{
+  text-decoration: none;
 }
 h3:hover {
   color:#0065fc;
@@ -34,41 +41,44 @@ p {
   margin-bottom: 20px;
 }
 /* NAV */
-.sizenav {
-  width: 35%;
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-#logo_reservia {
+#logo {
+  padding-top: 20px;
+}
+nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center;  
 }
-.lien_nav {
+nav ul {
+  display: flex;
+}
+nav li a {
+  padding: 30px;
   text-decoration: none;
-  color: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  color:initial;
 }
-.bouton_nav {
-  width: 150px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 3px solid transparent;
-}
-#inscription {
+#signIn {
   color: #0065fc;
-  font-weight: bold;
+  font-weight: bolder;
+  text-decoration: none;
+  border-top: 3px solid transparent;
+  padding: 30px;
+
 }
-.bouton_nav:hover {
+#signIn:hover {
   color: #0065fc;
   border-top: 3px solid #0065fc;
   cursor: pointer;
 }
+nav a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  cursor: pointer;
+} 
 /* SEARCH */
 .borduresearch {
   width: 350px;
@@ -112,15 +122,18 @@ p {
   background-color: #0065fc;
   font-weight: bold;
   cursor: pointer;
+
 }
 .buttonsearch:hover {
   background-color: #deebff;
   color: #0065fc;
   cursor: pointer;
 }
-
+.desktopnone {
+  display:none;
+}
 /* FILTRES */
-#box_filtres {
+.box_filtres {
   display: flex;
   align-items: center;
 }
@@ -130,6 +143,7 @@ p {
 }
 #filtres {
   display: flex;
+  flex-wrap: wrap;
   font-weight: bold;
   padding: 0;
   margin: 15px 0;
@@ -140,6 +154,9 @@ p {
   display: flex;
   align-items: center;
   margin: 10px 10px 0 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .logos:hover {
   cursor: pointer;
@@ -152,9 +169,6 @@ p {
   min-width: 17px;
   border-radius: 50px;
   padding: 12px;
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 li:hover .logofiltre {
   cursor: pointer;
@@ -179,7 +193,6 @@ li:hover .logofiltre {
   margin-right: 10px;
   border-radius: 100%;
   padding-top: 2px;
-  display: flex;
   text-align: center;
 }
 .infotext {
@@ -263,7 +276,13 @@ li:hover .logofiltre {
   justify-content: space-between;
   justify-items: center;
   margin: 20px 20px 20px 20px;
-
+}
+.afficherplus {
+    text-decoration: none;
+    color:black;
+    line-height: 40px;
+    font-weight: bold;
+    padding-left: 25px;
 }
 .cubehebergement {
   width: 30%;
@@ -301,7 +320,7 @@ transform: scale(1.05);
   padding-top: 25px;
   padding-right: 25px;
 }
-.blocpopulaires {
+.populaires {
   flex: 1;
   height: 650px;
   border-radius: 10px;
@@ -382,7 +401,7 @@ transform: scale(1.05);
 }
 .smallblocactivites {
   width: 23%;
-  height: (6)00px;
+  height: 500px;
 }
 .imgactivites1 {
   width: 100%;
@@ -436,6 +455,7 @@ transform: scale(1.05);
 }
 .cubeactivites {
   width: 23%;
+  height:100%;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
@@ -473,10 +493,197 @@ transform: scale(1.05);
   background-color: #F2F2F2;
   display: flex;
   justify-content: space-between;
-  padding: 20px 200px 20px 50px;
+  padding: 30px 100px 30px 50px;
 }
 .decorationNone {
   text-decoration: none;
   color:black;
   line-height: 40px;
+}
+
+/*             RESPONSIVE -------- MEDIA QUERIES --------             */
+@media only screen and (max-width : 1300px) {
+  /*             HEBERGEMENTS             */
+  .blocs {
+  flex-direction: column-reverse;
+  margin: 0;
+  }
+  .blocmarseille {
+  background-color: white;
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  }
+  .bloc1, .bloc2 {
+  padding:0;
+  margin: 0;
+  }
+  .cubehebergement {
+  width: 85%;
+  margin-bottom: 20px;
+  margin:0 5px 10px 5px;
+  box-shadow: 0 2px 15px 1px #dfe0e0; 
+  }
+  /*             POPULAIRES             */
+  .populaires{
+	border-radius:0;
+  width: 100%;
+  margin:0 5px 10px 5px;
+  padding: 0 0 15px 0;
+  }
+  .blocpopulaires{
+  display:flex;
+  justify-content: center;
+  }
+  .bloc3, .bloc4, .bloc5 {
+  padding:0;
+  width:32%;
+  }
+  .cubepopulaires {
+  box-shadow: 0 2px 15px 1px #dfe0e0; 
+  }
+  .cubesize h3 {
+  margin:0;
+  }
+  .cubesize {
+  padding-bottom:10px;
+  padding-top:10px;
+  justify-self: center;
+  }
+  .popimage1, .popimage2, .popimage3 {
+	height: 100%;
+	width: 45%;
+  }
+}
+/*             RESPONSIVE TABLETTE PAYSAGE             */
+@media only screen and (max-width: 780px) {
+  /*             POPULAIRES             */
+  .blocpopulaires {
+  flex-direction: column;
+  }
+  .bloc3, .bloc4, .bloc5 {
+  padding:0;
+  width:100%;
+  }
+  /*             HEBERGEMENTS             */
+  .bloc1, .bloc2 {
+  flex-direction: column;
+  align-items: center;
+  padding:0;
+  margin: 0;
+  }
+  .cubehebergement {
+  width: 90%;
+  margin-bottom: 20px;
+  }
+  /*             FOOTER             */
+  .footer{
+  display: block;
+  }
+}
+/*             RESPONSIVE TABLETTE PORTRAIT ET MOBILE             */
+@media only screen and (max-width: 630px) {
+  header {
+  margin:0;
+  }
+  h1 {
+  font-size: 22px;
+  }
+  h2 {
+  font-size: 22px;
+  }
+  p {
+  font-size: 16px;
+  }
+  /*             NAV          */
+  #logo {
+  padding-left:25px;
+  }
+  nav {
+  width: 100%;
+  }
+  nav ul {
+  width: 100%;
+  padding: 0;
+  }
+  #signIn {
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  }
+  nav a:hover {
+  border-top: none;
+  }
+  nav li {
+  width: 100%;
+  text-align: center;
+  border-bottom: 3px solid #f2f2f2;
+  padding-bottom: 15px;
+  }
+  nav li:hover {
+  border-bottom: 3px solid #0065fc;
+  }
+  /*             FILTRES             */
+  .box_filtres {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  #filtres {
+  margin: 0;
+  }
+  #titre_filtres {
+  font-size: 18px;
+  }
+  /*             ACTIVITES             */
+  .activites {
+  height: 1580px;
+  padding-left:20px;
+  padding-right:20px;
+  margin: 0;
+  }
+  .blocactivites {
+  flex-flow: column;
+  width: 100%;
+  }
+  .smallblocactivites {
+  width: 100%;
+  }
+  .cubeactivites {
+  width: 100%;
+  margin-bottom: 8%;
+  }
+  .smallcubeactivites {
+  width: 100%;
+  margin-bottom: 8%;
+  }
+  .imgactivites1, .imgactivites2, .imgactivites3, .imgactivites4, .imgactivites5, .imgactivites6 {
+  height: 150px;
+  margin:0;
+  }
+}
+/*             MOBILE             */
+@media only screen and (max-width: 410px) {
+  /*             RECHERCHE             */
+  .buttonsearch {
+  height: 45px; 
+  width: 45px;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  }
+  .mobilenone {
+  display:none;
+  }
+  .desktopnone {
+  display:flex;
+  }
+  .borduresearch {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 15px;
+  }
+  .iconsearch {
+  height: 45px; 
+  width: 45px;
+  border-radius: 15px 0 0 15px;
+  }
 }
