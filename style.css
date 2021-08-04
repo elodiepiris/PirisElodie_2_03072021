@@ -387,8 +387,8 @@ transform: scale(1.05);
   transform: scale(1.04);
 }
 .textpopulaires {
-  width: 40%!important;
-  padding-left: 20px!important;
+  width: 40%;
+  padding-left: 20px;
 }
 /*ACTIVITES A MARSEILLE*/
 .activites {
