@@ -533,7 +533,7 @@ transform: scale(1.05);
   }
   /*             POPULAIRES             */
   .populaires{
-	border-radius:0;
+  border-radius:0;
   width: 100%;
   margin:0 5px 10px 5px;
   padding: 0 0 15px 0;
@@ -558,8 +558,8 @@ transform: scale(1.05);
   justify-self: center;
   }
   .popimage1, .popimage2, .popimage3 {
-	height: 100%;
-	width: 45%;
+  height: 100%;
+  width: 45%;
   }
 }
 /*             RESPONSIVE TABLETTE PAYSAGE             */
