@@ -40,6 +40,10 @@ p {
   font-size: 15px;
   margin-bottom: 20px;
 }
+.decorationNone {
+  text-decoration: none;
+  color:inherit;
+}
 /* NAV */
 header {
   display: flex;
@@ -220,7 +224,7 @@ li:hover .logofiltre {
 .hotelimage1 {
   width: 100%;
   height: 120px;
-  background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  background-image: url("./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -228,7 +232,7 @@ li:hover .logofiltre {
 .hotelimage2 {
   width: 100%;
   height: 120px;
-  background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  background-image: url("./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -236,7 +240,7 @@ li:hover .logofiltre {
 .hotelimage3 {
   width: 100%;
   height: 120px;
-  background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  background-image: url("./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -244,7 +248,7 @@ li:hover .logofiltre {
 .hotelimage4 {
   width: 100%;
   height: 120px;
-  background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  background-image: url("./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -252,7 +256,7 @@ li:hover .logofiltre {
 .hotelimage5 {
   width: 100%;
   height: 120px;
-  background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  background-image: url("./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -260,7 +264,7 @@ li:hover .logofiltre {
 .hotelimage6 {
   width: 100%;
   height: 120px;
-  background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  background-image: url("./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
@@ -278,11 +282,11 @@ li:hover .logofiltre {
   margin: 20px 20px 20px 20px;
 }
 .afficherplus {
-    text-decoration: none;
-    color:black;
-    line-height: 40px;
-    font-weight: bold;
-    padding-left: 25px;
+  text-decoration: none;
+  color:black;
+  line-height: 40px;
+  font-weight: bold;
+  padding-left: 25px;
 }
 .cubehebergement {
   width: 30%;
@@ -295,6 +299,8 @@ li:hover .logofiltre {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 15px;
+  text-decoration: none;
+  color:inherit;
 }
 .cubehebergement:hover {
 cursor: pointer;
@@ -376,7 +382,9 @@ transform: scale(1.05);
   border-radius: 20px;
   display: flex;
   margin-bottom: 20px;
-  box-shadow: 5px 5px 5px 1px #dfe0e0; 
+  box-shadow: 5px 5px 5px 1px #dfe0e0;
+  text-decoration: none;
+  color:inherit;
 }
 .cubepopulaires:hover {
   cursor: pointer;
@@ -493,10 +501,6 @@ transform: scale(1.05);
   display: flex;
   justify-content: space-between;
   padding: 30px 100px 30px 50px;
-}
-.decorationNone {
-  text-decoration: none;
-  color:black;
   line-height: 40px;
 }
 
