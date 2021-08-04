@@ -381,8 +381,6 @@ transform: scale(1.05);
   display: flex;
   margin-bottom: 20px;
   box-shadow: 5px 5px 5px 1px #dfe0e0;
-  text-decoration: none;
-  color:inherit;
 }
 .cubepopulaires:hover {
   cursor: pointer;
