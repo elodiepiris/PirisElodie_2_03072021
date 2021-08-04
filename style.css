@@ -299,8 +299,6 @@ li:hover .logofiltre {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 15px;
-  text-decoration: none;
-  color:inherit;
 }
 .cubehebergement:hover {
 cursor: pointer;
