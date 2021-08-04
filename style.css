@@ -11,17 +11,17 @@ body {
 header, section {
   font-family: "Raleway", Arial, sans-serif;
   width: auto;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 h1 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: -5px;
 }
 h3 {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 ul{
   list-style: none;
@@ -37,7 +37,7 @@ h4 {
   padding-left: 25px;
 }
 p {
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 /* NAV */
@@ -139,7 +139,7 @@ nav a:hover {
 }
 #titre_filtres {
   margin: 20px 10px 10px 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 #filtres {
   display: flex;
@@ -503,6 +503,13 @@ transform: scale(1.05);
 
 /*             RESPONSIVE -------- MEDIA QUERIES --------             */
 @media only screen and (max-width : 1300px) {
+  header {
+    margin:0;
+  }
+  section {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   /*             HEBERGEMENTS             */
   .blocs {
   flex-direction: column-reverse;
@@ -583,9 +590,6 @@ transform: scale(1.05);
 }
 /*             RESPONSIVE TABLETTE PORTRAIT ET MOBILE             */
 @media only screen and (max-width: 630px) {
-  header {
-  margin:0;
-  }
   h1 {
   font-size: 22px;
   }
