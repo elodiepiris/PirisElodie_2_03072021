@@ -1,6 +1,6 @@
 /* POLICE */
 @font-face {
-  font-family: "raleway";
+  font-family: "Raleway";
   src: url("fonts/Raleway-VariableFont_wght.ttf")  format("truetype");
 }
 /* GENERAL */
@@ -108,7 +108,7 @@ nav a:hover {
 }
 .search::placeholder {
   color: black;
-  font-family: "raleway";
+  font-family: "Raleway";
 }
 .buttonsearch {
   display: flex;
@@ -503,11 +503,12 @@ transform: scale(1.05);
 /*             RESPONSIVE -------- MEDIA QUERIES --------             */
 @media only screen and (max-width : 1300px) {
   header {
-    margin:20px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   section {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   /*             HEBERGEMENTS             */
   .blocs {
@@ -587,10 +588,18 @@ transform: scale(1.05);
   display: block;
   }
 }
+@media only screen and (max-width : 655px) {
+  header {
+    margin-left: 40px;
+    flex-wrap: nowrap;
+  }
+
+}
 /*             RESPONSIVE TABLETTE PORTRAIT ET MOBILE             */
 @media only screen and (max-width: 630px) {
   header {
     margin:0;
+    flex-wrap:wrap;
   }
   h1 {
   font-size: 22px;
@@ -669,6 +678,9 @@ transform: scale(1.05);
 }
 /*             MOBILE             */
 @media only screen and (max-width: 410px) {
+  section {
+    margin-left:25px;
+  }
   /*             RECHERCHE             */
   .buttonsearch {
   height: 45px; 
