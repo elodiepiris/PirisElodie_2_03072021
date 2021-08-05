@@ -301,8 +301,8 @@ li:hover .logofiltre {
   padding-bottom: 15px;
 }
 .cubehebergement:hover {
-cursor: pointer;
-transform: scale(1.05);
+  cursor: pointer;
+  transform: scale(1.05);
 }
 .texthebergement {
   width: 90%;
@@ -397,7 +397,7 @@ transform: scale(1.05);
 }
 .blocactivites {
   width: 100%;
-  height: 500px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -651,7 +651,6 @@ transform: scale(1.05);
   }
   /*             ACTIVITES             */
   .activites {
-  height: 1580px;
   padding-left:20px;
   padding-right:20px;
   margin: 0;
