@@ -531,6 +531,10 @@ li:hover .logofiltre {
   margin:0 5px 10px 5px;
   box-shadow: 0 2px 15px 1px #dfe0e0; 
   }
+  .hotelimage1, .hotelimage2, .hotelimage3, .hotelimage4, .hotelimage5, .hotelimage6 {
+  min-height: 150px;
+  margin:0;
+  }
   /*             POPULAIRES             */
   .populaires{
   border-radius:0;
@@ -658,17 +662,21 @@ li:hover .logofiltre {
   .blocactivites {
   flex-flow: column;
   width: 100%;
+  height:auto;
+  margin: 0 ;
+  padding:0 ;
   }
   .smallblocactivites {
   width: 100%;
+  height:100%;
   }
   .cubeactivites {
   width: 100%;
-  margin-bottom: 8%;
+  margin-bottom: 20px ;
   }
   .smallcubeactivites {
   width: 100%;
-  margin-bottom: 8%;
+  margin-bottom: 20px ;
   }
   .imgactivites1, .imgactivites2, .imgactivites3, .imgactivites4, .imgactivites5, .imgactivites6 {
   height: 150px;
