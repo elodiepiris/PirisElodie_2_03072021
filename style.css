@@ -524,6 +524,7 @@ li:hover .logofiltre {
   .bloc1, .bloc2 {
   padding:0;
   margin: 0;
+  height:auto;
   }
   .cubehebergement {
   width: 85%;
@@ -582,6 +583,7 @@ li:hover .logofiltre {
   align-items: center;
   padding:0;
   margin: 0;
+  height:auto;
   }
   .cubehebergement {
   width: 90%;
