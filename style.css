@@ -532,7 +532,7 @@ li:hover .logofiltre {
   box-shadow: 0 2px 15px 1px #dfe0e0; 
   }
   .hotelimage1, .hotelimage2, .hotelimage3, .hotelimage4, .hotelimage5, .hotelimage6 {
-  min-height: 150px;
+  min-height: auto;
   margin:0;
   }
   /*             POPULAIRES             */
