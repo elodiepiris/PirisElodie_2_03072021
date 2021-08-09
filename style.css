@@ -104,11 +104,12 @@ nav a:hover {
 .search {
   height: 40px;
   width: 190px;
-  font-size: 14px;
+  font-size: 15px;
   padding-left: 10px;
   color: black;
   font-weight: bold;
   border: none;
+  font-family: "Raleway";
 }
 .search::placeholder {
   color: black;
@@ -211,7 +212,7 @@ li:hover .logofiltre {
 }
 .blocmarseille {
   flex: 2;
-  height: 650px;
+  height: auto;
   margin-right: 20px;
   border-radius: 10px;
   background-color: #f2f2f2;
@@ -325,7 +326,7 @@ li:hover .logofiltre {
 }
 .populaires {
   flex: 1;
-  height: 650px;
+  height: auto;
   border-radius: 10px;
   background-color: #f2f2f2;
 }
@@ -379,7 +380,6 @@ li:hover .logofiltre {
   padding: 5px;
   border-radius: 20px;
   display: flex;
-  margin-bottom: 20px;
   box-shadow: 5px 5px 5px 1px #dfe0e0;
 }
 .cubepopulaires:hover {
@@ -553,6 +553,7 @@ li:hover .logofiltre {
   }
   .cubepopulaires {
   box-shadow: 0 2px 15px 1px #dfe0e0; 
+  margin-bottom: 20px;
   }
   .cubesize h3 {
   margin:0;
@@ -595,11 +596,10 @@ li:hover .logofiltre {
   }
 }
 @media only screen and (max-width : 655px) {
-  header {
-    margin-left: 40px;
-    flex-wrap: nowrap;
+header {
+  margin-left: 40px;
+  flex-wrap: nowrap;
   }
-
 }
 /*             RESPONSIVE TABLETTE PORTRAIT ET MOBILE             */
 @media only screen and (max-width: 630px) {
@@ -689,28 +689,30 @@ li:hover .logofiltre {
 @media only screen and (max-width: 410px) {
   section {
     margin-left:25px;
+    margin-right:25px;
   }
   /*             RECHERCHE             */
   .buttonsearch {
-  height: 45px; 
-  width: 45px;
-  border-radius: 15px;
-  flex-wrap: wrap;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  margin-left:50px;
   }
-  .mobilenone {
+.mobilenone {
   display:none;
   }
-  .desktopnone {
+.desktopnone {
   display:flex;
   }
-  .borduresearch {
-  width: fit-content;
-  height: fit-content;
-  border-radius: 15px;
-  }
-  .iconsearch {
-  height: 45px; 
-  width: 45px;
-  border-radius: 15px 0 0 15px;
+.borduresearch {
+  width: auto;
+  height: auto;
+  justify-content: space-between;
+  } 
+}
+/*             MOBILE             */
+@media only screen and (max-width: 380px) {
+.buttonsearch {
+  margin-left: 30px;
   }
 }
