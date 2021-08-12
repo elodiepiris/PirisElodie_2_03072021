@@ -113,7 +113,7 @@ nav a:hover {
 }
 
 .search_selection::placeholder {
-  color: rgb(2, 2, 2);
+  color: black;
 }
 
 .buttonsearch {
