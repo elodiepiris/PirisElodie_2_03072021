@@ -97,12 +97,6 @@ nav a:hover {
   border: none;
 }
 
-.iconsearch:hover {
-  background-color: #deebff;
-  color: #0065fc;
-  cursor: pointer;
-}
-
 .search_selection {
   width: 230px;
   border: #f2f2f2 solid 1px;
@@ -120,6 +114,7 @@ nav a:hover {
 .buttonsearch {
   border-radius: 0 15px 15px 0;
   background-color: #0065fc;
+  padding: 0 20px 0 20px;
   border: none;
   cursor: pointer;
   color: white;
@@ -698,28 +693,24 @@ header {
     border: 1px solid #f2f2f2;
     border-radius: 15px;
   }
-
   .iconsearch {
     width: 50px;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 15px 0 0 15px;
   }
-
   .search_selection {
     width: 70%;
     border: none;
   }
-
   .buttonsearch {
     width: 50px;
     height: 50px;
     border-radius: 15px;
+    padding: 0;
   }
-
   .search_selection_text {
     display: none;
   }
-
   #search_selection_icon {
     display: initial;
   }
