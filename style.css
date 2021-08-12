@@ -680,7 +680,7 @@ header {
   }
 }
 /*             MOBILE             */
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 480px) {
   section {
     margin-left:25px;
     margin-right:25px;
