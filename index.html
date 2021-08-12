@@ -29,13 +29,15 @@
 <!--Section de recherche-->
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-                <div class="borduresearch">
-                    <div class="iconsearch"><i class="fas fa-map-marker-alt"></i></div>
-                    <div><input class="search" type="search" placeholder="Marseille, France" /></div>
-                    <div class="buttonsearch">
-                        <span class="mobilenone">Rechercher</span>
-                        <span class="desktopnone"><i class="fas fa-search"></i></span>
-                    </div>
+                <div class="sectionsearch">
+                    <button class="iconsearch">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                    </button>
+                    <input type="search" class="search_selection" placeholder="Marseille, France"/>
+                    <button class="buttonsearch">
+                      <i id="search_selection_icon" class="fas fa-lg fa-search "></i>
+                      <span class="search_selection_text">Rechercher</span>
+                    </button>
                 </div>
                 <div class="box_filtres">
                     <h3 id="titre_filtres">Filtres</h3>
